@@ -4,20 +4,15 @@ public class Question4
 {
   public static void main(String[] args)
   {
-    /**
-     * Prints a right angle triangle with *. The base of the triangle depends on the integer given.
-     *    e.g.
-     *     > 5
-     *     *****
-     *     ****
-     *     ***
-     *     **
-     *     *
-     * 
-     * Hint: 2 loops are required. System.out.print(...) to print on single line.
-     */
-     
-    Scanner in = new Scanner(System.in);
-    
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Enter a number: "); //This prompts for number
+    int number = input.nextInt();//stores number value
+    for (int y = number; y > 0;y--){//this determines the height of the triangle
+      for (int x=0; x < y;x++){//this determines the number of stars horizontally
+        System.out.print("*");
+      }
+      System.out.println();//This starts on next line for the next row
+    }
   }
 }
